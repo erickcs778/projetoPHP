@@ -122,6 +122,7 @@ class Cadastro extends Conexao
             $mail->Port = 587;
 
             //Envio do email
+            $mail->setFrom(getenv("MAILUSER"));
             $mail->addAddress($email);
             $mail->isHTML(true);
             $mail->Subject = $subject;

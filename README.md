@@ -1,2 +1,2 @@
 # projetoPHP
-primeiro projeto PHP
+Exemplo simples de CRUD com PHP Orientado a objetos

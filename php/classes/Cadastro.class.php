@@ -127,15 +127,11 @@ class Cadastro extends Conexao
             $mail->isHTML(true);
             $mail->Subject = $subject;
             $mail->Body = $msg;
-            if(!$mail->send()){
+            if (!$mail->send()) {
                 return $mail->ErrorInfo;
-                
-            } else{
+            } else {
                 return true;
             }
-
-            
-
         } catch (\Throwable $th) {
             throw $th;
         }

@@ -15,6 +15,42 @@ if ($_GET) {
             alert('houve um erro ao cadastrar usuario');
             </script>";
             break;
+
+        case 3:
+            echo "<script>
+            alert('usuario alterado com sucesso');
+            </script>";
+            break;
+
+        case 4:
+            echo "<script>
+                alert('houve um erro ao alterar o usuario');
+                </script>";
+            break;
+
+        case 5:
+            echo "<script>
+                alert('usuario excluido com sucesso');
+                </script>";
+            break;
+
+        case 6:
+            echo "<script>
+                    alert('houve um erro ao excluir o usuario');
+                    </script>";
+            break;
+
+        case 7:
+            echo "<script>
+                    alert('Email enviado com sucesso');
+                    </script>";
+            break;
+
+        case 8:
+            echo "<script>
+                        alert('houve um erro ao enviar o email');
+                        </script>";
+            break;
     }
 }
 
@@ -53,7 +89,8 @@ if ($_GET) {
     </table>
 
     <a href="pages/cadastrar.php">cadastrar</a>
-    <a href="">alterar</a>
+    <br>
+    <a href="pages/enviaremail.php">enviar email</a>
 
 </body>
 
